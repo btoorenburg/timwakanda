@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><directory>
+	<group ID="01000000000000000000000000000000" name="Admin">
+		<include user="bas" userID="0BCD41C8F43B5C43AB6526075F7A32B1"/>
+		<include user="matthijs" userID="C55830E6A791C04580A7FA73EFA231DD"/>
+	</group>
+	<group ID="253D22828A86A8418732CD0DEE226CB2" name="concenrcontroller">
+		<include user="matthijs" userID="C55830E6A791C04580A7FA73EFA231DD"/>
+		<include user="jasper" userID="D2437A825E44CF40905C55ACE06CF6E5"/>
+		<include group="controller" groupID="D6B95067B79E0E4190BE06F5B719BEAD"/>
+		<include group="manager" groupID="3A17DB0091CF384CA5A39CE34984EEAA"/>
+		<include group="gast" groupID="8FD9DC7A58CF99448D7FF36F074167B2"/>
+	</group>
+	<group ID="D6B95067B79E0E4190BE06F5B719BEAD" name="controller">
+		<include group="manager" groupID="3A17DB0091CF384CA5A39CE34984EEAA"/>
+		<include group="gast" groupID="8FD9DC7A58CF99448D7FF36F074167B2"/>
+		<include user="floris" userID="5EFDE2B859FA6649BB4B0F209ACBFFA3"/>
+	</group>
+	<group ID="3A17DB0091CF384CA5A39CE34984EEAA" name="manager">
+		<include group="gast" groupID="8FD9DC7A58CF99448D7FF36F074167B2"/>
+		<include user="brigit" userID="5F016152133FCF4386036FD8D752D3A4"/>
+	</group>
+	<group ID="8FD9DC7A58CF99448D7FF36F074167B2" name="gast"/>
+	<group ID="EF89E236D55F184A85E7689ACD024C74" name="administrator">
+		<include user="bas" userID="0BCD41C8F43B5C43AB6526075F7A32B1"/>
+		<include group="concenrcontroller" groupID="253D22828A86A8418732CD0DEE226CB2"/>
+		<include group="controller" groupID="D6B95067B79E0E4190BE06F5B719BEAD"/>
+		<include group="manager" groupID="3A17DB0091CF384CA5A39CE34984EEAA"/>
+		<include group="gast" groupID="8FD9DC7A58CF99448D7FF36F074167B2"/>
+	</group>
+	<group ID="538BA98908AF004C8F2A875021F0F3B9" name="bezoeker"/>
+	<user ID="0BCD41C8F43B5C43AB6526075F7A32B1" name="bas" fullName="Bas Toorenburg" password="e7b1f4b1933d4822af2e8bac486206ca"/>
+	<user ID="C55830E6A791C04580A7FA73EFA231DD" name="matthijs" fullName="Matthijs Toorenburg" password="835afbcf1175decfd785b6d52e0536e8"/>
+	<user ID="D2437A825E44CF40905C55ACE06CF6E5" name="jasper" fullName="Jasper Toorenburg" password="3d77fc8face97395733393d2731b070b"/>
+	<user ID="5EFDE2B859FA6649BB4B0F209ACBFFA3" name="floris" fullName="Floris Toorenburg" password="c4f791be4773b74e9f0250f227462914"/>
+	<user ID="5F016152133FCF4386036FD8D752D3A4" name="brigit" fullName="Brigit Toorenburg Beijer" password="8f3d8f06652b8c33423160b1f327591f"/>
+</directory>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><EntityModelCatalog>
+	<extraProperties ____objectunic="true" version="1">
+		<classes ____objectunic="true">
+			<Aquarium ____objectunic="true" panelColor="#eee">
+				<panel ____objectunic="true" pathVisible="true" isOpen="true">
+					<position ____objectunic="true" X="435" Y="218"/>
+				</panel>
+			</Aquarium>
+			<Eigenaar ____objectunic="true" panelColor="#B8CCE4">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="36" Y="24"/>
+				</panel>
+			</Eigenaar>
+			<Meting ____objectunic="true" panelColor="#fff">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="776" Y="618"/>
+				</panel>
+			</Meting>
+			<Foto ____objectunic="true" panelColor="#C4BD97">
+				<panel ____objectunic="true" isOpen="true" pathVisible="true">
+					<position ____objectunic="true" X="63" Y="773"/>
+				</panel>
+			</Foto>
+		</classes>
+		<model ____objectunic="true" workspaceLeft="0" workspaceTop="0">
+			<relationCurve ____objectunic="true" run="true" mode="1"/>
+		</model>
+	</extraProperties>
+	<dataClasses name="Aquarium" className="Aquarium" collectionName="AquariumCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autosequence="true" type="long" indexKind="btree" primKey="true"/>
+		<attributes name="eigenaar" kind="relatedEntity" scope="public" type="Eigenaar" path="Eigenaar"/>
+		<attributes name="naam" kind="storage" scope="public" type="string"/>
+		<attributes name="locatie" kind="storage" scope="public" type="string"/>
+		<attributes name="lengte" kind="storage" scope="public" type="number"/>
+		<attributes name="breedte" kind="storage" scope="public" type="number"/>
+		<attributes name="hoogte" kind="storage" scope="public" type="number"/>
+		<attributes name="inhoud" kind="storage" scope="public" type="number"/>
+		<attributes name="verlichting" kind="storage" scope="public" type="string"/>
+		<attributes name="datum_inrichting" kind="storage" scope="public" type="date" simpleDate="false"/>
+		<attributes name="soort" kind="storage" scope="public" type="string"/>
+		<attributes name="temperatuur" kind="storage" scope="public" type="number"/>
+		<attributes name="ph" kind="storage" scope="public" type="number"/>
+		<attributes name="foto" kind="storage" scope="public" type="image"/>
+		<attributes name="voedingsbodem" kind="storage" scope="public" type="string"/>
+		<attributes name="verwarming" kind="storage" scope="public" type="string"/>
+		<attributes name="verlichting_voor" kind="storage" scope="public" type="string"/>
+		<attributes name="verlichting_achter" kind="storage" scope="public" type="string"/>
+		<attributes name="metingCollection" kind="relatedEntities" scope="public" type="MetingCollection" reversePath="true" path="aquarium"/>
+		<attributes name="fotoCollection" kind="relatedEntities" scope="public" type="FotoCollection" reversePath="true" path="aquarium"/>
+	</dataClasses>
+	<dataClasses name="Eigenaar" className="Eigenaar" collectionName="EigenaarCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autosequence="true" type="long" indexKind="btree" primKey="true"/>
+		<attributes name="achternaam" kind="storage" scope="public" type="string"/>
+		<attributes name="voornaam" kind="storage" scope="public" type="string"/>
+		<attributes name="woonplaats" kind="storage" scope="public" type="string"/>
+		<attributes name="foto" kind="storage" scope="public" type="image"/>
+		<attributes name="datum_gestart" kind="storage" scope="public" type="date" simpleDate="false"/>
+		<attributes name="aquariumCollection" kind="relatedEntities" scope="public" type="AquariumCollection" reversePath="true" path="eigenaar"/>
+	</dataClasses>
+	<dataClasses name="Foto" className="Foto" collectionName="FotoCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autosequence="true" type="long" primKey="true"/>
+		<attributes name="datum" kind="storage" scope="public" type="date" simpleDate="false"/>
+		<attributes name="foto" kind="storage" scope="public" type="image"/>
+		<attributes name="aquarium" kind="relatedEntity" scope="public" type="Aquarium" path="Aquarium"/>
+		<attributes name="toelichting" scope="public" type="string" kind="storage"/>
+	</dataClasses>
+	<dataClasses name="Meting" className="Meting" collectionName="MetingCollection" scope="public">
+		<attributes name="ID" kind="storage" scope="public" unique="true" autosequence="true" type="long" indexKind="btree" primKey="true"/>
+		<attributes name="datum" kind="storage" scope="public" type="date" simpleDate="false"/>
+		<attributes name="tijdstip" kind="storage" scope="public" type="number"/>
+		<attributes name="ph" kind="storage" scope="public" type="number"/>
+		<attributes name="kh" kind="storage" scope="public" type="number"/>
+		<attributes name="gh" kind="storage" scope="public" type="number"/>
+		<attributes name="CO2" kind="storage" scope="public" type="number"/>
+		<attributes name="po4" kind="storage" scope="public" type="number"/>
+		<attributes name="po4_bemesting" kind="storage" scope="public" type="number"/>
+		<attributes name="no3" kind="storage" scope="public" type="number"/>
+		<attributes name="no3_bemesting" kind="storage" scope="public" type="number"/>
+		<attributes name="fe" kind="storage" scope="public" type="number"/>
+		<attributes name="temperatuur" kind="storage" scope="public" type="number"/>
+		<attributes name="aquarium" kind="relatedEntity" scope="public" type="Aquarium" path="Aquarium"/>
+		<attributes name="toestand" kind="storage" scope="public" type="string"/>
+	</dataClasses>
+</EntityModelCatalog>
