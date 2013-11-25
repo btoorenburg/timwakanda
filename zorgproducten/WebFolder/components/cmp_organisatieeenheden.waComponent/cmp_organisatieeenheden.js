@@ -13,11 +13,19 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
+	var dataGrid1 = {};	// @dataGrid
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
+	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
+	{// @endlock
+		var positie_oe = sources.organisatieeenheidCollection.getPosition();
+		
+	};// @lock
+
 	// @region eventManager// @startlock
+	WAF.addListener(this.id + "_dataGrid1", "onRowClick", dataGrid1.onRowClick, "WAF");
 	// @endregion// @endlock
 
 	};// @lock

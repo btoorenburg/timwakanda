@@ -3,6 +3,28 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#{id}label13 {
+	 z-index: 13;
+	 width: 82px;
+	 height: 13px;
+	 top: 352px;
+	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
+#{id}dataGrid1 {
+	 z-index: 13;
+	 width: 1580px;
+	 height: 793px;
+	 top: 370px;
+	 left: 10px;
+	
+	 position: absolute;
+	 
+}
+
 #{id}textField16 {
 	 z-index: 34;
 	 width: 130px;
@@ -16,10 +38,10 @@
 
 #{id}label20 {
 	 z-index: 34;
-	 width: 82px;
 	 height: 13px;
-	 top: 103px;
-	 right: 140px;
+	 top: 103.5px;
+	 left: auto;
+	 right: 230px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -39,10 +61,10 @@
 
 #{id}label19 {
 	 z-index: 33;
-	 width: 80px;
 	 height: 13px;
-	 top: 73px;
-	 right: 140px;
+	 top: 73.5px;
+	 left: auto;
+	 right: 230px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -62,10 +84,10 @@
 
 #{id}label18 {
 	 z-index: 32;
-	 width: 80px;
 	 height: 13px;
-	 top: 43px;
-	 right: 140px;
+	 top: 43.5px;
+	 left: auto;
+	 right: 230px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -85,10 +107,10 @@
 
 #{id}label17 {
 	 z-index: 31;
-	 width: 80px;
 	 height: 13px;
-	 top: 13px;
-	 right: 140px;
+	 top: 13.5px;
+	 left: auto;
+	 right: 230px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -134,7 +156,7 @@
 	 height: 13px;
 	 top: 2px;
 	 left: 10px;
-	 right: 1618px;
+	 right: 1528px;
 	
 	 position: absolute;
 	 
@@ -145,29 +167,7 @@
 	 height: 70px;
 	 top: 20px;
 	 left: 10px;
-	 right: 100px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}label12 {
-	 z-index: 11;
-	 top: 350px;
-	 bottom: 808px;
-	 left: 11px;
-	 right: 1597px;
-	
-	 position: absolute;
-	 
-}
-
-#{id}dataGrid2 {
-	 z-index: 11;
-	 top: 368px;
-	 bottom: 14px;
-	 left: 11px;
-	 right: 99px;
+	 right: 10px;
 	
 	 position: absolute;
 	 
@@ -249,7 +249,7 @@
 	 height: 13px;
 	 top: 102px;
 	 left: 10px;
-	 right: 1530px;
+	 right: 1440px;
 	
 	 position: absolute;
 	 min-width: 150px;
@@ -353,7 +353,7 @@
 	 height: 220px;
 	 top: 120px;
 	 left: 10px;
-	 right: 100px;
+	 right: 10px;
 	
 	 position: absolute;
 	 

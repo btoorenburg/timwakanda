@@ -28,7 +28,7 @@
 		<include group="gast" groupID="8FD9DC7A58CF99448D7FF36F074167B2"/>
 	</group>
 	<group ID="538BA98908AF004C8F2A875021F0F3B9" name="bezoeker"/>
-	<user ID="0BCD41C8F43B5C43AB6526075F7A32B1" name="bas" fullName="Bas Toorenburg" password="e7b1f4b1933d4822af2e8bac486206ca"/>
+	<user ID="0BCD41C8F43B5C43AB6526075F7A32B1" name="bas" fullName="Bas Toorenburg" password="bdc8af7fd18bd988bf6c397b68b7f26d"/>
 	<user ID="C55830E6A791C04580A7FA73EFA231DD" name="matthijs" fullName="Matthijs Toorenburg" password="835afbcf1175decfd785b6d52e0536e8"/>
 	<user ID="D2437A825E44CF40905C55ACE06CF6E5" name="jasper" fullName="Jasper Toorenburg" password="3d77fc8face97395733393d2731b070b"/>
 	<user ID="5EFDE2B859FA6649BB4B0F209ACBFFA3" name="floris" fullName="Floris Toorenburg" password="c4f791be4773b74e9f0250f227462914"/>
