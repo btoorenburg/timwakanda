@@ -3,7 +3,9 @@
     <meta name="WAF.catalog" content="Organisatie,Organisatieeenheid,Jaarrekening"/>
     <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="Organisatie" data-scope="global" data-lib="WAF" data-id="organisatie" data-dataType="string" data-autoLoad="false" content="organisatie"/>
     <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="dataClass" data-source="organisatie.organisatieeenheidCollection" data-scope="global" data-lib="WAF" data-id="organisatieeenheidCollection" data-dataType="string" data-autoLoad="true" content="organisatieeenheidCollection"/>
-    <meta data-type="dataSource" data-lib="WAF" data-source="organisatieeenheidCollection.jaarrekeningCollection" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-scope="local" data-id="{id}jaarrekeningCollection" content="jaarrekeningCollection"/>
+    <meta data-type="dataSource" data-lib="WAF" data-source="organisatieeenheidCollection.jaarrekeningCollection" data-source-type="dataClass" data-dataType="string" data-autoLoad="true" name="WAF.config.datasources" data-scope="global" data-id="jaarrekeningCollection" content="jaarrekeningCollection"/>
+    
+    
     
     
     
@@ -72,6 +74,6 @@
  		<label id="{id}label3" for="{id}textField5" data-valign="middle" data-type="label" data-margin="5" data-lib="WAF" class="waf-widget waf-label waf-label-textField">ID organisatie</label>
  	</div>
 		<label id="{id}label1" for="{id}container1" data-valign="top" data-type="label" data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="true" data-constraint-left="true" class="waf-widget waf-label waf-label-container">Organisatie</label>
-		<div id="{id}dataGrid1" data-type="dataGrid" data-lib="WAF" class="waf-widget waf-dataGrid " data-label="Jaarrekeningen" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[]" data-constraint-left="true" data-constraint-top="true" data-binding="{id}jaarrekeningCollection."></div>
-		<label id="{id}label13" data-type="label" data-lib="WAF" for="{id}dataGrid1" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-dataGrid" data-constraint-left="true" data-constraint-top="true">Jaarrekeningen</label>
+		<div id="{id}dataGrid2" data-type="dataGrid" data-lib="WAF" data-binding="jaarrekeningCollection" class="waf-widget waf-dataGrid " data-label="Jaarrekeningen" data-label-position="top" data-selection-mode="single" data-display-error="true" data-footer-text="item(s)" data-column="[{'sourceAttID':'ID','colID':'ID','width':'70','title':'ID'},{'sourceAttID':'jaar','colID':'jaar','width':'90','title':'jaar'},{'sourceAttID':'immateriele_vaste_activa','colID':'immateriele_vaste_activa','width':'90','title':'immateriele_vaste_activa'},{'sourceAttID':'materiele_vaste_activa','colID':'materiele_vaste_activa','width':'90','title':'materiele_vaste_activa'},{'sourceAttID':'financiele_vaste_activa','colID':'financiele_vaste_activa','width':'90','title':'financiele_vaste_activa'},{'sourceAttID':'totaal_vaste_activa','colID':'totaal_vaste_activa','width':'90','title':'totaal_vaste_activa'},{'sourceAttID':'voorraden','colID':'voorraden','width':'90','title':'voorraden'},{'sourceAttID':'vorderingen_financieringstekort','colID':'vorderingen_financieringstekort','width':'90','title':'vorderingen_financieringstekort'},{'sourceAttID':'onderhanden_werk','colID':'onderhanden_werk','width':'90','title':'onderhanden_werk'}]" data-constraint-left="true" data-constraint-top="true"></div>
+		<label id="{id}label12" data-type="label" data-lib="WAF" for="{id}dataGrid2" data-valign="middle" data-margin="5" class="waf-widget waf-label waf-label-dataGrid" data-constraint-left="true" data-constraint-top="true">Jaarrekeningen</label>
 	</section>

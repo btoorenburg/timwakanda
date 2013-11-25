@@ -3,8 +3,8 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
-#{id}label13 {
-	 z-index: 13;
+#{id}label12 {
+	 z-index: 16;
 	 width: 82px;
 	 height: 13px;
 	 top: 352px;
@@ -14,10 +14,10 @@
 	 
 }
 
-#{id}dataGrid1 {
-	 z-index: 13;
+#{id}dataGrid2 {
+	 z-index: 15;
 	 width: 1580px;
-	 height: 793px;
+	 height: 800px;
 	 top: 370px;
 	 left: 10px;
 	
@@ -41,7 +41,7 @@
 	 height: 13px;
 	 top: 103.5px;
 	 left: auto;
-	 right: 230px;
+	 right: 140px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -64,7 +64,7 @@
 	 height: 13px;
 	 top: 73.5px;
 	 left: auto;
-	 right: 230px;
+	 right: 140px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -87,7 +87,7 @@
 	 height: 13px;
 	 top: 43.5px;
 	 left: auto;
-	 right: 230px;
+	 right: 140px;
 	
 	 position: absolute;
 	 min-width: 80px;
@@ -110,7 +110,7 @@
 	 height: 13px;
 	 top: 13.5px;
 	 left: auto;
-	 right: 230px;
+	 right: 140px;
 	
 	 position: absolute;
 	 min-width: 80px;
