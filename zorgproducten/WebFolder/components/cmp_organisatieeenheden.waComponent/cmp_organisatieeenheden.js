@@ -21,7 +21,7 @@ function constructor (id) {
 	dataGrid1.onRowClick = function dataGrid1_onRowClick (event)// @startlock
 	{// @endlock
 		var positie_oe = sources.organisatieeenheidCollection.getPosition();
-		
+		alert ("De geslecteerde OE is: " + positie_oe );
 	};// @lock
 
 	// @region eventManager// @startlock
